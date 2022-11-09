@@ -2,37 +2,26 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../../Contexts/AuthProvider';
 import logo from '../../../../assets/img/logo.png'
+import { Image } from 'react-bootstrap';
+import { FaUser } from "react-icons/fa";
 
 
 
 
 const Header = () => {
-    // const { user, logout } = useContext(AuthContext);
+    const { user, logout } = useContext(AuthContext);
 
-    // const handleLogOut = () => {
-    //     logout()
-    //         .then()
-    //         .catch()
-    // }
+    const handleLogOut = () => {
+        logout()
+            .then()
+            .catch()
+    }
 
     const menuItems = <>
         <li className='font-semibold'>
             <Link to={'/'}>Home</Link>
-            <Link to={'/'}>Foods</Link>
-            <Link to={'/'}>Blog</Link>
-           
-            {/* {
-                user?.email ?
-                    <>
-                        <li className='font-semibold'><Link to='/orders'>Orders</Link></li>
-                        <li className='font-semibold'>
-                            <button onClick={handleLogOut} className='btn-ghost'>Logout</button>
-                        </li>
-                    </>
-                    :
-                    <li className='font-semibold'><Link to='/login'>Login</Link></li>
-            } */}
-
+            <Link to={'/services'}>Services</Link>
+            <Link to={'/blogs'}>Blog</Link>
         </li>
     </>
     return (
@@ -45,6 +34,7 @@ const Header = () => {
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         {menuItems}
                     </ul>
+                    
                 </div>
                 <img src={logo} alt="" className='w-20 rounded' />
                 <Link className="btn btn-ghost normal-case text-xl">
@@ -56,9 +46,30 @@ const Header = () => {
                 <ul className="menu menu-horizontal p-0">
                     {menuItems}
                 </ul>
+                <button className="btn btn-outline btn-warning">My Review</button>
             </div>
             <div className="navbar-end">
-                <button className="btn btn-outline btn-warning">My Review</button>
+                {user?.photoURL ?
+                    <Image
+                        style={{ height: '40px' }}
+                        roundedCircle
+                        src={user?.photoURL} className="rounded-xl mr-4">
+                    </Image>
+                    : <FaUser className='mr-4'></FaUser>
+                }
+
+                {
+                    user?.uid ?
+                        <>
+                            <span className='mr-4'>{user?.displayName}</span>
+                            <button className="btn btn-outline btn-warning font-semibold align-middle" onClick={handleLogOut}>Logout</button>
+                        </>
+                        :
+                        <>
+                            <Link to='/login' className='mr-4'>Login</Link>
+                            <Link to='/signup' className='mr-4'>Signup</Link>
+                        </>
+                }
             </div>
         </div>
     );

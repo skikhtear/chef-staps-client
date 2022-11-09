@@ -1,6 +1,6 @@
 import React from 'react';
 import { createContext } from 'react';
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
 import app from '../Firebase/firebase.config';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -23,9 +23,13 @@ const AuthProvider = ({ children }) => {
         return signInWithEmailAndPassword(auth, email, password);
     }
 
+    const providerLogin = (provider) => {
+        setLoading(true)
+        return signInWithPopup(auth, provider);
+    }
+    
     const logout = () => {
-
-        localStorage.removeItem('genius-token')
+        localStorage.removeItem('chef steps token')
         return signOut(auth)
     }
 
@@ -46,6 +50,7 @@ const AuthProvider = ({ children }) => {
         loading,
         createUser,
         login,
+        providerLogin,
         logout
     }
 

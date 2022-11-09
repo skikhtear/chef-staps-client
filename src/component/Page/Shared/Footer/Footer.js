@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer rounded-xl p-32 bg-black my-10">
             <div>
                 <img src={logo} alt=""  className='w-40'/>
-                <p>Chef Steps <br />copyright chef steps 2022</p>
+                <p>Chef Steps <br />Copyright  Reserved By Chef Steps 2022</p>
             </div>
             <div>
                 <span className="footer-title">Services</span>

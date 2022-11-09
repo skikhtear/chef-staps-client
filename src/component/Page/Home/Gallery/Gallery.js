@@ -1,13 +1,13 @@
 import React from 'react';
-import img1 from '../../../../assets/img/bannar/bannar1.jpg'
-import img2 from '../../../../assets/img/bannar/bannar2.jpg'
-import img3 from '../../../../assets/img/bannar/bannar3.jpg'
-import img4 from '../../../../assets/img/bannar/bannar4 .jpg'
-import img5 from '../../../../assets/img/bannar/bannar5.jpg'
-import img6 from '../../../../assets/img/bannar/bannar6.jpg'
-import img7 from '../../../../assets/img/bannar/bannar7.jpg'
-import img8 from '../../../../assets/img/bannar/bannar8.jpg'
-import img9 from '../../../../assets/img/bannar/bannar9.jpg'
+import img1 from '../../../../assets/img/banner/banner1.jpg'
+import img2 from '../../../../assets/img/banner/banner2.jpg'
+import img3 from '../../../../assets/img/banner/banner3.jpg'
+import img4 from '../../../../assets/img/banner/banner4.jpg'
+import img5 from '../../../../assets/img/banner/banner5.jpg'
+import img6 from '../../../../assets/img/banner/banner6.jpg'
+import img7 from '../../../../assets/img/banner/banner7.jpg'
+import img8 from '../../../../assets/img/banner/banner8.jpg'
+import img9 from '../../../../assets/img/banner/banner9.jpg'
 
 const Gallery = () => {
     return (

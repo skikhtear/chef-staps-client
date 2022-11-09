@@ -1,0 +1,38 @@
+[
+    {
+        "picture": "https://c.ndtvimg.com/2021-08/uj4vumeg_home-decor-650_625x300_10_August_21.jpg",
+        "name": "In-Home Parties",
+        "detail": "At Home Catering has developed in our country, we are here to provide excellent private and corporate caterers. we can ensure that our service will be upto the mark. ",
+        "price": 28
+    },
+    {
+        "picture": "https://centurioncenter.com/wp-content/uploads/2018/12/3-Reasons-Why-the-Catering-Can-Make-or-Break-an-Event.jpg",
+        "name": "Corporate Events",
+        "detail": "With extensive experience in catering a wide range of corporate events, we understand that there is no room for error when it comes to corporate functions. When Bro-Chef's Events caters your company’s event, our outstanding team serves as an extension of your company. That means we are equally invested in ensuring the event is a success, and thus hold our catering team to the highest standards.",
+        "price": 37
+    },
+    {
+        "picture": "https://live.staticflickr.com/4389/36246698484_7dccbd551d_b.jpg",
+        "name": "Weddings And Galas",
+        "detail": "Get the best wedding caterers in Bangladesh, Fossetta gourmet catering and make your wedding festivities all the more enjoyable. With our special catering, special displays and live stations, and wide range of cuisine, you are spoilt for choice. Fossetta gourmet catering is a professional caterer that specializes in personalized service for the weddings. This team has the experience in this field which will help you to enjoy a smooth planning process for your celebration, and giving you the possibilities to enjoy the moment. The combination of fresh ingredients, reliable and pure spices, and years of experience of our chefs will make your wedding a golden memory. You can bank upon our expertise.",
+        "price": 99
+    },
+    {
+        "picture": "https://www.toprestaurantprices.com/wp-content/uploads/2022/10/Best-Chicken-Restaurants-in-the-USA-570x300.jpg",
+        "name": "Client Specific Menu Options",
+        "detail": "We provide variours type of cuisine services. Among them Client specific menu option is one. you can take only one food item services. But if you want at a limitation of a menu , the charge will not be considered less than the main charge.",
+        "price": 25
+    },
+    {
+        "picture": "https://www.bettycrocker.com/-/media/GMI/Core-Sites/BC/Images/BC/content/how-to/other/meal-prep-guide/meal-prep_hero.jpg",
+        "name": "Meal Preparation in Your Home",
+        "detail": "Whether you live on your own or are a busy parent, finding the time and energy to prepare home-cooked meals can seem like a daunting task. At the end of a hectic day, eating out or ordering in might feel like the quickest, easiest option. But convenience and processed food can take a significant toll on your mood and health.",
+        "price": 22
+    },
+    {
+        "picture": "https://s3-ap-southeast-2.amazonaws.com/ish-oncourse-stgeorge/be6784a2-10a9-4bff-87b7-f48dbdad3140",
+        "name": "Cooking Classes",
+        "detail": "Do you have a passion for cooking? Cooking is an art that allows you to express your creativity. Numerous people from different professions fall in love with cooking so much that they choose it as their career. To learn the art of cooking and how to present it before the target audience is nothing less than a subject worth studying. A good institution or mentor can be of great help in that fact.Here is Bro-Chef for you",
+        "price": 30
+    }
+]
