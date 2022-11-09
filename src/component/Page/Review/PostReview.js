@@ -37,7 +37,7 @@ const PostReview = () => {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
-                // authorization: `Bearer ${localStorage.getItem('chef-steps')}`
+                authorization: `Bearer ${localStorage.getItem('chef-steps')}`
             },
             body: JSON.stringify(review)
         })
