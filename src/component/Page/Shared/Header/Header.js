@@ -22,6 +22,7 @@ const Header = () => {
             <Link to={'/'}>Home</Link>
             <Link to={'/services'}>Services</Link>
             <Link to={'/blogs'}>Blog</Link>
+            <Link to={'/myreviews'}><button className="btn btn-outline btn-warning">My Review</button></Link>
         </li>
     </>
     return (
@@ -46,7 +47,7 @@ const Header = () => {
                 <ul className="menu menu-horizontal p-0">
                     {menuItems}
                 </ul>
-                <button className="btn btn-outline btn-warning">My Review</button>
+                
             </div>
             <div className="navbar-end">
                 {user?.photoURL ?
