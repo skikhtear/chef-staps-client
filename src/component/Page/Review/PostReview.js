@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { Image } from 'react-bootstrap';
 import { FaUser } from 'react-icons/fa';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../Contexts/AuthProvider';
@@ -7,20 +6,21 @@ import { AuthContext } from '../../../Contexts/AuthProvider';
 
 
 const PostReview = () => {
-    const { _id,title  } = useLoaderData();
+    const { _id,name  } = useLoaderData();
     const { user } = useContext(AuthContext);
 
     const handlePlaceReview = event => {
         event.preventDefault();
         const form = event.target;
-        const name = form.Name.value;
+        const userName = form.Name.value;
         const email = user?.email || 'unregistered';
         const message = form.message.value;
         const UserImg = user?.photoURL || <FaUser></FaUser>;
 
         const review = {
             service: _id,
-            customer: name,
+            serviceName:name,
+            customer: userName,
             email,
             message,
             UserImg
@@ -57,7 +57,7 @@ const PostReview = () => {
     return (
         <div className='flex justify-center' >
             <form onSubmit={handlePlaceReview}>
-                <h2 className="text-5xl font-bold ">Please Review {title}</h2>
+                <h2 className="text-5xl font-bold ">Please Review </h2>
                 <div className='flex justify-center my-11'>
                     {user?.photoURL ?
                         <img className='rounded-full' src={user?.photoURL} alt=""style={{ height: '70px' }} />
@@ -66,7 +66,7 @@ const PostReview = () => {
                 </div>
                 <div className='w-3/1'>
                     <input name="email" type="text" placeholder="Your email" defaultValue={user?.email} className="input input-ghost w-full mb-5 input-bordered" readOnly />
-                    <input name="Name" type="text" placeholder="Name" className="input input-ghost w-full mb-5  input-bordered" />
+                    <input name="Name" type="text" placeholder="Name" className="input  w-full mb-5  input-bordered" />
                 </div>
                 <textarea name="message" className="textarea textarea-bordered h-24 w-full" placeholder="Your Message" required></textarea>
                 <div className='flex justify-center mt-5'>
