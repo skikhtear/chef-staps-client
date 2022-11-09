@@ -48,7 +48,7 @@ const Header = () => {
             </div>
             <div className="navbar-end">
                 {user?.photoURL ?
-                    <img src={user?.photoURL} alt=""  style={{ height: '50px' }} className='rounded-full '/>
+                    <img src={user?.photoURL} alt=""  style={{ height: '50px' }} className='rounded-full mr-5'/>
                     : <FaUser className='mr-4'></FaUser>
                 }
 

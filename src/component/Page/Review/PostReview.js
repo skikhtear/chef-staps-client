@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { FaUser } from 'react-icons/fa';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../Contexts/AuthProvider';
 
 
@@ -70,7 +70,10 @@ const PostReview = () => {
                 </div>
                 <textarea name="message" className="textarea textarea-bordered h-24 w-full" placeholder="Your Message" required></textarea>
                 <div className='flex justify-center mt-5'>
-                    <input className='btn' type="submit" value="Post Review" />
+                    {
+                        user?.email ? <input className='btn' type="submit" value="Post Review" /> :
+                            <Link to="/login"><input className='btn' value="Post Review" /></Link>
+                    }
                   </div>
                  
             </form>
