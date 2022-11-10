@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import {  useLoaderData } from 'react-router-dom';
 import PostReview from '../../Review/PostReview';
+import Review from '../../Review/Review';
 
 const ServiceDetails = () => {
     const service = useLoaderData();
-    const {_id,name,picture,price,detail } = service;
+    const {name,picture,price,detail } = service;
     return (
         <div>
             <div className="card w-full bg-base-100 shadow-xl">
@@ -22,6 +23,7 @@ const ServiceDetails = () => {
                 </div>
             </div>
             <PostReview></PostReview>
+            <Review></Review>
         </div>
     );
 };
