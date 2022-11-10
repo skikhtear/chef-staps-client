@@ -3,13 +3,14 @@ import React, { useContext } from 'react';
 import { Button } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Contexts/AuthProvider';
+import useTitle from '../../../Hooks/useTitle';
 import { authToken } from '../Shared/Token/Token';
 
 
 
 
 const Login = () => {
-
+useTitle('Login')
     const { login, providerLogin } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();

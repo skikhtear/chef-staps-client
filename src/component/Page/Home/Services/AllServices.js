@@ -1,7 +1,10 @@
 import React,{useEffect,useState} from 'react';
+import useTitle from '../../../../Hooks/useTitle';
+import { Spinner } from 'react-bootstrap';
 import ServiceCard from './ServiceCard';
 
 const AllServices = () => {
+    useTitle('Services')
     const [services, setServices] = useState([]);
     useEffect(() => {
         fetch('http://localhost:5000/allservices')
@@ -10,6 +13,7 @@ const AllServices = () => {
     }, [])
     return (
         <div className='my-20'>
+            <Spinner animation="border" variant="success" />
             <div className='text-center mb-12'>
                 <h2 className="text-5xl font-semibold">Service Area</h2>
             </div>

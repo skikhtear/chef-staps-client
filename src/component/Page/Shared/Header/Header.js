@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../../Contexts/AuthProvider';
 import logo from '../../../../assets/img/logo.png'
-import { Image } from 'react-bootstrap';
 import { FaUser } from "react-icons/fa";
 
 
@@ -22,7 +21,7 @@ const Header = () => {
             <Link to={'/'}>Home</Link>
             <Link to={'/services'}>Services</Link>
             <Link to={'/blogs'}>Blog</Link>
-            <Link to={'/myreviews'}><button className="btn btn-outline btn-warning">My Review</button></Link>
+           
         </li>
     </>
     return (
@@ -64,6 +63,7 @@ const Header = () => {
                             <Link to='/signup' className='mr-4'>Signup</Link>
                         </>
                 }
+                <Link to={'/myreviews'}><button className="btn btn-outline btn-warning ml-5">My Review</button></Link>
             </div>
         </div>
     );

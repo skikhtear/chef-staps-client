@@ -10,7 +10,7 @@ const ReviewCard = ({ review }) => {
         <div className=''>
             <div className="card w-96 bg-neutral text-neutral-content">
                 <div className="card-body items-center text-center">
-                    <img className='rounded-full border-2' src={UserImg} alt="" style={{ height: '70px' }} />
+                    <img className='rounded-full border-2' src={UserImg } alt="" style={{ height: '70px' }} />
                     <h2 className="card-title">{customer}</h2>
                     <h5>Mail:{email}</h5>
                     <h3>{serviceName}</h3>
