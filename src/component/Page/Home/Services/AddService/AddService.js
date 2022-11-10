@@ -1,13 +1,10 @@
-import React, { useContext } from 'react';
-import { FaUser } from 'react-icons/fa';
-import { Link, useLoaderData,  } from 'react-router-dom';
-import { AuthContext } from '../../../../../Contexts/AuthProvider';
+import React from 'react';
+
 
 
 
 
 const AddService = () => {
-    const { user } = useContext(AuthContext);
 
     const handleAddService = event => {
         event.preventDefault();

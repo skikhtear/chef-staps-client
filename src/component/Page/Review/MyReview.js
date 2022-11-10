@@ -69,6 +69,13 @@ const MyReview = () => {
             })
     }
 
+    const msg = reviews.length;
+
+    if (msg < 1) {
+        return <h1 className="text-5xl font-bold text-center">No Review</h1>
+    }
+
+
     return (
         <div>
             <div className='flex justify-center my-16'>
@@ -80,7 +87,7 @@ const MyReview = () => {
                         {
                             reviews.map(review => <ReviewRow
                                 key={review._id}
-                                order={review}
+                                review={review}
                                 handleDelete={handleDelete}
                                 handleStatusUpdate={handleStatusUpdate}
                             ></ReviewRow>)
