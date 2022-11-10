@@ -3,7 +3,7 @@ import img from '../../../../assets/img/about-img.jpg'
 
 const About = () => {
     return (
-        <div className="hero min-h-screen bg-black rounded-xl">
+        <div className="hero min-h-screen bg-black rounded-xl" data-aos="zoom-in-right">
             <div className="hero-content flex-col lg:flex-row">
                 <img src={img} alt='' className='w-1/3'/>
                 <div>

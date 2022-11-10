@@ -11,34 +11,34 @@ import img9 from '../../../../assets/img/banner/banner9.jpg'
 
 const Gallery = () => {
     return (
-        <div>
+        <div >
             <h1 className='text-5xl font-bold text-center mt-20'>Gallery</h1>
             <div class="grid grid-cols-3 gap-4 my-11">
-                <div>
+                <div data-aos="zoom-in-up">
                     <img src={img1} alt=""  className='rounded'/>
                 </div>
-                <div>
+                <div data-aos="zoom-in-up">
                     <img src={img2} alt="" className='rounded' />
                 </div>
-                <div>
+                <div data-aos="zoom-in-up">
                     <img src={img3} alt="" className='rounded' />
                 </div>
-                <div>
+                <div data-aos="zoom-in-up">
                     <img src={img4} alt="" className='rounded' />
                 </div>
-                <div>
+                <div data-aos="zoom-in-up">
                     <img src={img5} alt="" className='rounded' />
                 </div>
-                <div>
+                <div data-aos="zoom-in-up">
                     <img src={img6} alt="" className='rounded' />
                 </div>
-                <div>
+                <div data-aos="zoom-in-up">
                     <img src={img7} alt="" className='rounded' />
                 </div>
-                <div>
+                <div data-aos="zoom-in-up">
                     <img src={img8} alt="" className='rounded' />
                 </div>
-                <div>
+                <div data-aos="zoom-in-up">
                     <img src={img9} alt="" className='rounded' />
                 </div>
             </div>
