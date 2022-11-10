@@ -28,6 +28,7 @@ useTitle('Login')
             .then(result => {
                 const user = result.user;
                 authToken(user)
+                form.reset();
                 navigate(from, { replace: true });
 
             })

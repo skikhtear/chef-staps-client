@@ -78,9 +78,9 @@ const MyReview = () => {
                 <table className="table w-full">
                     <tbody>
                         {
-                            reviews.map(order => <ReviewRow
-                                key={order._id}
-                                order={order}
+                            reviews.map(review => <ReviewRow
+                                key={review._id}
+                                order={review}
                                 handleDelete={handleDelete}
                                 handleStatusUpdate={handleStatusUpdate}
                             ></ReviewRow>)

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const ReviewRow = ({ order, handleDelete, handleStatusUpdate }) => {
-    const { _id, serviceName, customer, service, message,UserImg} = order;
+const ReviewRow = ({ review, handleDelete }) => {
+    const { _id, serviceName, customer, service, message,UserImg} = review;
     const [reviewService, setReviewService] = useState({})
 
     useEffect(() => {

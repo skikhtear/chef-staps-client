@@ -50,8 +50,8 @@ const UpdateReview = () => {
                     }
                 </div>
                 <div className='w-3/1'>
-                    <input onChange={handleInputChange} name="email" type="text" placeholder="Your email" defaultValue={user?.email} className="input input-ghost w-full mb-5 input-bordered" readOnly />
-                    <input onChange={handleInputChange} defaultValue={oldReviews.customer} name="Name" type="text" placeholder="Name" className="input  w-full mb-5  input-bordered" />
+                    <input onChange={handleInputChange} name="email" type="text" placeholder="Your email" defaultValue={user?.email} className="input input-ghost w-full mb-5 input-bordered bg-warning text-black" readOnly />
+                    <input onChange={handleInputChange} defaultValue={oldReviews.customer} name="Name" type="text" placeholder="Name" className="input  w-full mb-5  input-bordered" readOnly/>
                 </div>
                 <textarea onChange={handleInputChange} defaultValue={oldReviews.message} name="message" className="textarea textarea-bordered h-24 w-full" placeholder="Your Message" required></textarea>
                 <div className='flex justify-center mt-5'>
