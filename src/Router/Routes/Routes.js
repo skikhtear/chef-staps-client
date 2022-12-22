@@ -39,7 +39,7 @@ const router = createBrowserRouter([
             {
                 path: '/services/:id',
                 element: <ServiceDetails></ServiceDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({ params }) => fetch(`https://chef-steps-server.vercel.app/services/${params.id}`)
             },
             {
                 path: '/myreviews',
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
             {
                 path: '/updatereviews/:id',
                 element: <UpdateReview></UpdateReview>,
-                loader: ({ params }) => fetch(`http://localhost:5000/reviews/${params.id}`)
+                loader: ({ params }) => fetch(`https://chef-steps-server.vercel.app/reviews/${params.id}`)
             },
             {
                 path: '/addservice',

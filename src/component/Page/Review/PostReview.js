@@ -33,7 +33,7 @@ const PostReview = () => {
 
         // }
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://chef-steps-server.vercel.app/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

@@ -22,7 +22,7 @@ const AddService = () => {
         }
 
 
-        fetch('http://localhost:5000/addservices', {
+        fetch('https://chef-steps-server.vercel.app/addservices', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
